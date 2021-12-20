@@ -1,8 +1,8 @@
-def read_file(file, arr=False):
+def read_file(file, array=False):
 	f = open(file, "r")
 	lines = f.read()
 
-	if arr:
+	if array:
 		lines = lines.split('\n')
 
 	f.close()
