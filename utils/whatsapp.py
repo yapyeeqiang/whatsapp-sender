@@ -3,7 +3,7 @@ from time import sleep
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
-from termcolor import colored
+# from termcolor import colored
 
 WHATSAPP_WEB_URL = 'https://web.whatsapp.com'
 DELAY = 30
@@ -25,7 +25,7 @@ def generate_link(contact, message, web=False):
 
 def send_message(driver, contacts, message):
     print_empty_lines(2)
-    print(f"Once your browser opens up, sign in to {colored('WhatsApp Web', 'green')}...")
+    print(f"Once your browser opens up, sign in to WhatsApp Web...")
     print("Wait for your chats to be visible so you don't have to sign in again.")
     print_empty_lines(1)
 
@@ -43,7 +43,7 @@ def send_message(driver, contacts, message):
             continue
 
         print(
-            f"{sending_index}/{total_contacts} => {colored('Sending message', 'yellow')} to {colored(contact, 'cyan')}.")
+            f"{sending_index}/{total_contacts} => Sending message to {contact}.")
 
         try:
             whatsapp_url = generate_link(contact, message, web=True)
@@ -57,8 +57,8 @@ def send_message(driver, contacts, message):
                         send_button = WebDriverWait(driver, DELAY).until(
                             EC.element_to_be_clickable((By.CLASS_NAME, '_4sWnG')))
                     except Exception as e:
-                        print(f"{colored('Something went wrong', 'red')}...")
-                        print(f"{colored('Failed to send message', 'red')} to this contact: {colored(contact, 'cyan')}, retry ({sending_index}/3)")
+                        print(f"Something went wrong...")
+                        print(f"Failed to send message to this contact: {contact}, retry ({sending_index}/3)")
                         print_empty_lines(1)
                         print("Make sure your phone and computer are connected to the internet.")
                         print("If there is an alert, please dismiss it.")
@@ -72,8 +72,8 @@ def send_message(driver, contacts, message):
 
                         sleep(3)
 
-                        print(f"{colored('Message sent', 'green')} to: {contact}")
+                        print(f"Message sent to: {contact}")
                         print_empty_lines(1)
 
         except Exception as e:
-            print(f"Failed to send message to {colored(contact, 'cyan')}: {str(e)}")
+            print(f"Failed to send message to {contact}: {str(e)}")
