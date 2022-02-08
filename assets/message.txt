@@ -1,17 +1,1 @@
-Hello! This is Linus from The Hacker Collective. 
-
-We’re excited to announce that we’ve revamped our learning model with new content, new projects and new partners and industry experts to join in with our new launch in 2022!
-
-→ Complete Software Development Programme (CSDP) - For beginners who are interested to have the skills to build full stack web apps https://hackercollective.co/complete-tech
-
-→ Last-mile Dev Bootcamp (LMDB) - For junior techies who want to upskill their technical and soft skills to increase their salary and be matched to foreign companies while working remotely in Malaysia. https://hackercollective.co/lastmile
-
-→ All-In Digital Marketing Programme (ADMP) - For beginners who are interested to have the skills to launch and scale any product online. https://hackercollective.co/all-in
-
-All of these will be starting in 2022 with Early Bird Launch Offers - Grants, referral offers and money-back guarantee (plus free retakes!) if you don’t manage to recoup your cost by getting jobs or projects after you graduate the programme.
-
-Find out more and sign up on the links above for whichever ones that caught your attention, you will be redirected to watch a free, full training video that will add immense value to you even if you decide to not join us!
-
-If you have any questions after signing up and watching the free training videos, please feel free to schedule a call with me in the link below anytime at all! 
-
-https://hackercollective.co/strategy-call-linus
+Hello, how are you?
